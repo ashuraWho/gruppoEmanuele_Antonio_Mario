@@ -1,4 +1,4 @@
-#### GESTIONE AULE SCOLASTICHE ####
+# GESTIONE AULE SCOLASTICHE #
 
 Il progetto è uno script Python che gestisce aule scolastiche (con studenti e professori), utilizzando i concetti dell'OOP.
 
@@ -17,19 +17,19 @@ Il programma permette di:
 
 ## Struttura del progetto
 
-# Classe "Persona" (classe base)
+### Classe "Persona" (classe base)
 - "nome"
 - "data di nascita"
 
-# Classe "Studente" (deriva da Persona)
+### Classe "Studente" (deriva da Persona)
 Aggiunge:
 - "matricola"
 
-# Classe "Professore" (deriva da Persona)
+### Classe "Professore" (deriva da Persona)
 Aggiunge:
 - "materia" insegnata
 
-# Classe "Aula"
+### Classe "Aula"
 Gestisce:
 - nome aula
 - capienza
@@ -38,7 +38,7 @@ Gestisce:
 - mostra le info
 - salva sul file "<nome_aula>.txt" le info
 
-# Classe "GestoreAule"
+### Classe "GestoreAule"
 - aggiune aule
 - rimuove aule
 - mostra le info delle aule esistenti
