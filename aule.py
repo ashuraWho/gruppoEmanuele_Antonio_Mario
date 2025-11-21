@@ -39,7 +39,7 @@ class Aula:
         print(f"Studenti presenti ({len(self.studenti)}):")
         if self.studenti:
             for s in self.studenti:
-                print(f"  - {s.nome} (data di nascita: {s.eta})")
+                print(f"  - {s.nome} (data di nascita: {s.data_nascita})")
         else:
             print("Nessuno studente presente.")
             
