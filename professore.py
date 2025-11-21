@@ -1,4 +1,4 @@
-from persona import Person as Persona
+from persona import Persona
 
 class Professore(Persona): # Classe figlio di "Person" (per i Professori)
     def __init__(self, nome: str, data_nascita: str, materia: str):
