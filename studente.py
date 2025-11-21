@@ -1,6 +1,7 @@
 from datetime import datetime
+from persona import Person
 
-class Studente(Person):
+class Studente(Persona):
     def __init__(self, nome, data_nascita, matricola):
         super().__init__(nome, data_nascita)
         self.matricola = matricola
