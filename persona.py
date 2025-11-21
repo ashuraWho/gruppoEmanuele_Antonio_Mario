@@ -14,10 +14,10 @@ class Person: # Classe base
     def assign_eta(self, eta):
         self._eta = eta
 
-    def get_name(self): # Leggere il nome
-        return self._eta
+    def get_nome(self): # Leggere il nome
+        return self._nome
     
-    def get_name(self): # Leggere il nome
+    def get_eta(self): # Leggere il nome
         return self._eta
 
 # ---------------------------------------------------------------
