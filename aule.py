@@ -1,3 +1,6 @@
+from studente import Studente
+from professore import Professore
+
 class Aula:
     
     def __init__(self, nome: str, capienza: int):
