@@ -1,7 +1,7 @@
 from studente import Studente
 from professore import Professore
 from aule import Aula
-from gestoreAule import GestoreAule
+from GestoreAule import GestoreAule
 
 gestore = GestoreAule()
 
