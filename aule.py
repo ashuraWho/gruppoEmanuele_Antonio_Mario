@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 from studente import Studente
 from professore import Professore
+=======
+import studente
+import professore
+>>>>>>> Emanuele
 
 class Aula:
     
@@ -10,7 +15,7 @@ class Aula:
         self.studenti = []      # Lista di Studente
         self.professore = None  # Professore assegnato (o None)
 
-    def aggiungi_studente(self, studente: Studente):
+    def aggiungi_studente(self, studente: studente.Studente):
         
         if studente in self.studenti: # Se ci sono studenti allora non aggiungerlo
             return False
@@ -21,15 +26,15 @@ class Aula:
         self.studenti.append(studente)
         return True
 
-    def rimuovi_studente(self, nome_studente: str):
+    def rimuovi_studente(self, matricola_studente: str):
         for s in self.studenti:
-            if s.nome == nome_studente:
+            if s.matricola == matricola_studente:
                 self.studenti.remove(s)
                 return True
             
         return False
 
-    def assegna_professore(self, professore: Professore):
+    def assegna_professore(self, professore: professore.Professore):
         self.professore = professore
 
     def mostra_info(self):
@@ -38,11 +43,11 @@ class Aula:
         
         prof = self.professore.nome if self.professore else "Nessuno"
         
-        print(f"Professore assegnato: {prof}")
+        print(f"Professore assegnato: {prof} ({self.professore.materia})")
         print(f"Studenti presenti ({len(self.studenti)}):")
         if self.studenti:
             for s in self.studenti:
-                print(f"  - {s.nome} (data di nascita: {s.data_nascita})")
+                print(f"  - Nome: {s.nome} | Matricola: {s.matricola} | Data di nascita: {s.data_nascita})")
         else:
             print("Nessuno studente presente.")
             
