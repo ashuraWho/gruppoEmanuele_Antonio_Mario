@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 from studente import Studente
 from professore import Professore
-=======
-import studente
-import professore
->>>>>>> Emanuele
 
 class Aula:
     
@@ -15,7 +10,7 @@ class Aula:
         self.studenti = []      # Lista di Studente
         self.professore = None  # Professore assegnato (o None)
 
-    def aggiungi_studente(self, studente: studente.Studente):
+    def aggiungi_studente(self, studente: Studente):
         
         if studente in self.studenti: # Se ci sono studenti allora non aggiungerlo
             return False
@@ -34,7 +29,7 @@ class Aula:
             
         return False
 
-    def assegna_professore(self, professore: professore.Professore):
+    def assegna_professore(self, professore: Professore):
         self.professore = professore
 
     def mostra_info(self):
