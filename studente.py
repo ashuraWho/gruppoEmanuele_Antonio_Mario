@@ -1,5 +1,5 @@
 from datetime import datetime
-from persona import Person
+from persona import Persona
 
 class Studente(Persona):
     def __init__(self, nome, data_nascita, matricola):
