@@ -37,7 +37,7 @@ def assegna_professore_aula():
         return
 
     nome = input("Nome professore: ")
-    anno_nascita = int(input("Anno di nascita (es. 1980): "))
+    anno_nascita = int(input("Anno di nascita:"))
     materia = input("Materia insegnata: ")
 
     professore = Professore(nome, anno_nascita, materia)
