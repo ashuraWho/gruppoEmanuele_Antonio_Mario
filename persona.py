@@ -6,30 +6,10 @@
     
 """
 
-class Person: # Classe base
-    def __init__(self, name, eta):
-        self._name = name
-        self._eta = eta
-
-    def assign_eta(self, eta):
-        self._eta = eta
-
-    def get_nome(self): # Leggere il nome
-        return self._nome
+class Persona: # Classe base
+    def __init__(self, nome: str, data_nascita: str):
+        self._nome = nome
+        self._data_nascita = data_nascita
     
-    def get_eta(self): # Leggere il nome
-        return self._eta
-
-# ---------------------------------------------------------------
-
-class Studente(Person): # Classe figlio di "Person" (per gli studenti)
-    def __init__(self, name, ruolo):
-        super().__init__(name)
-        
-        self.ruolo = ruolo # Studente
-
-class Professore(Person): # Classe figlio di "Person" (per i Professori)
-    def __init__(self, name, ruolo):
-        super().__init__(name)
-        
-        self.ruolo = ruolo # Professore
+    def info(self):
+        return f"Nome: {self.nome} (data di nascita: {self.data_nascita})"
