@@ -21,9 +21,9 @@ class Aula:
         self.studenti.append(studente)
         return True
 
-    def rimuovi_studente(self, nome_studente: str):
+    def rimuovi_studente(self, matricola_studente: str):
         for s in self.studenti:
-            if s.nome == nome_studente:
+            if s.matricola == matricola_studente:
                 self.studenti.remove(s)
                 return True
             
@@ -38,11 +38,11 @@ class Aula:
         
         prof = self.professore.nome if self.professore else "Nessuno"
         
-        print(f"Professore assegnato: {prof}")
+        print(f"Professore assegnato: {prof} ({self.professore.materia})")
         print(f"Studenti presenti ({len(self.studenti)}):")
         if self.studenti:
             for s in self.studenti:
-                print(f"  - {s.nome} (data di nascita: {s.data_nascita})")
+                print(f"  - Nome: {s.nome} | Matricola: {s.matricola} | Data di nascita: {s.data_nascita})")
         else:
             print("Nessuno studente presente.")
             
