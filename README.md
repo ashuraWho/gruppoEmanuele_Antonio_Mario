@@ -44,6 +44,13 @@ Gestisce:
 - mostra le info delle aule esistenti
 - trova una determinata aula
 
+### File.txt
+Viene creato un file per ogni aula con le seguenti info:
+- nome aula
+- capienza
+- info professore
+- info studenti (elencati)
+
 ---
 
 ## Main
